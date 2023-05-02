@@ -4,6 +4,7 @@ import com.codestates.member.entity.Member;
 import com.codestates.stamp.Stamp;
 import com.codestates.validator.NotSpace;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 
 import javax.validation.constraints.Email;
@@ -27,6 +28,8 @@ public class MemberDto {
     }
 
     @Getter
+    @AllArgsConstructor
+    @Builder
     public static class Patch {
         private long memberId;
 
@@ -47,6 +50,7 @@ public class MemberDto {
     }
 
     @AllArgsConstructor
+    @Builder
     @Getter
     public static class response {
         private long memberId;

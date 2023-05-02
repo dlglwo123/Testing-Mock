@@ -3,6 +3,7 @@ package com.codestates.member.entity;
 import com.codestates.audit.Auditable;
 import com.codestates.order.entity.Order;
 import com.codestates.stamp.Stamp;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,7 +11,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-
 @NoArgsConstructor
 @Getter
 @Setter
